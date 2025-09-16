@@ -25,8 +25,8 @@ const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       className={`${baseStyle} ${variants[variant]} ${className}`}
-      type={type}
-      disbaled={disabled}
+      // type={type}
+      // disbaled={disabled}
     >
       {children}
     </button>
