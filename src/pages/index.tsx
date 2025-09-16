@@ -84,7 +84,7 @@ const Home: NextPage<HomePageProps> = ({ featuredProducts }) => {
                   <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                   <p className="text-emerald-600 font-semibold mb-3">Rp{product.price.toLocaleString('id-ID')}</p>
                   <a 
-                    href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo, saya tertarik dengan ${product.name} - Rp${product.price.toLocaleString('id-ID')}`)}`}
+                    href={`https://wa.me/6282196809592?text=${encodeURIComponent(`Halo, saya tertarik dengan ${product.name} - Rp${product.price.toLocaleString('id-ID')}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
