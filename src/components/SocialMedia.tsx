@@ -1,8 +1,8 @@
-import React from 'react';
+import Link from 'next/link';
 
 const SocialMedia = () => {
   const socials = [
-     {
+    {
       name: 'Instagram',
       icon: '/medsos/instagram.png',
       url: 'https://instagram.com/yourumkm',
@@ -18,10 +18,10 @@ const SocialMedia = () => {
       url: 'https://tiktok.com/@yourumkm',
     },
     {
-      name: 'Youtube',
+      name: 'YouTube',
       icon: '/medsos/youtube.png',
       url: 'https://youtube.com/@yourumkm',
-    }
+    },
   ];
 
   return (
@@ -32,10 +32,17 @@ const SocialMedia = () => {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-600 hover:text-emerald-600 transition"
+          className="flex flex-col items-center text-gray-400 hover:text-emerald-500 transition-colors"
+          aria-label={social.name}
         >
-          <span className="text-2xl mb-1">{social.icon}</span>
-          <span className="text-sm">{social.name}</span>
+          <div className="w-8 h-8 mb-1">
+            <img
+              src={social.icon}
+              alt={social.name}
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <span className="text-xs font-medium">{social.name}</span>
         </a>
       ))}
     </div>
