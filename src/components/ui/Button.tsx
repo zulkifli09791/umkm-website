@@ -5,6 +5,8 @@ interface ButtonProps {
   onClick?: () => void;
   variant?: 'primary' | 'outline';
   className?: string;
+  type?: 'button' | 'submit' | 'reset';
+  disbaled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,6 +25,8 @@ const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       className={`${baseStyle} ${variants[variant]} ${className}`}
+      type={type}
+      disbaled={disabled}
     >
       {children}
     </button>
