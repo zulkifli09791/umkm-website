@@ -39,7 +39,7 @@ const Products: NextPage = () => {
   const fetchProducts = async () => {
     setLoading(true);
     const { data, error } = await supabase
-      .from<Product>('products')
+      .from<'products', Product>('products')
       .select('*');
 
     if (!error && data) {
