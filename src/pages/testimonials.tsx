@@ -13,7 +13,7 @@ const Testimonials: NextPage = () => {
   const fetchTestimonials = async () => {
     setLoading(true);
     const { data, error } = await supabase
-      .from<Testimonial>('testimonials')
+      .from<'testimonials', Testimonial>('testimonials')
       .select('*')
       .order('created_at', { ascending: false });
 
