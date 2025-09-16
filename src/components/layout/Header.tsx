@@ -18,7 +18,6 @@ const Header = () => {
             <Link href="/" className="text-gray-700 hover:text-emerald-600 font-medium transition">Beranda</Link>
             <Link href="/products" className="text-gray-700 hover:text-emerald-600 font-medium transition">Produk</Link>
             <Link href="/testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition">Testimoni</Link>
-            <Link href="/blog" className="text-gray-700 hover:text-emerald-600 font-medium transition">Blog</Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -44,7 +43,6 @@ const Header = () => {
               <Link href="/" className="text-gray-700 hover:text-emerald-600 font-medium transition" onClick={() => setIsMenuOpen(false)}>Beranda</Link>
               <Link href="/products" className="text-gray-700 hover:text-emerald-600 font-medium transition" onClick={() => setIsMenuOpen(false)}>Produk</Link>
               <Link href="/testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition" onClick={() => setIsMenuOpen(false)}>Testimoni</Link>
-              <Link href="/blog" className="text-gray-700 hover:text-emerald-600 font-medium transition" onClick={() => setIsMenuOpen(false)}>Blog</Link>
             </nav>
           </div>
         )}
