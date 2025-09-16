@@ -103,7 +103,7 @@ const Home: NextPage<HomePageProps> = ({ featuredProducts }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data: featuredProducts } = await supabase
-    .from<Product>('products')
+    .from<'products', Product>('products')
     .select('*')
     .limit(3);
 
