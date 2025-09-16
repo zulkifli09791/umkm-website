@@ -1,0 +1,10 @@
+-- sql untuk tambah produk ke web
+INSERT INTO products (name, description, price, category, image_url)
+VALUES
+  (
+    'Cermin',
+    'Cermin dengan model bundar.',
+    150000.00,
+    'Fashion & Aksesoris',
+    'images/products/cermin.jpg'
+  );
