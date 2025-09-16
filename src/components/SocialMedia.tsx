@@ -2,10 +2,26 @@ import React from 'react';
 
 const SocialMedia = () => {
   const socials = [
-    { name: 'Instagram', icon: '📸', url: 'https://instagram.com/yourumkm' },
-    { name: 'Facebook', icon: '📘', url: 'https://facebook.com/yourumkm' },
-    { name: 'TikTok', icon: '🎵', url: 'https://tiktok.com/@yourumkm' },
-    { name: 'YouTube', icon: '▶️', url: 'https://youtube.com/@yourumkm' },
+     {
+      name: 'Instagram',
+      icon: '/medsos/instagram.png',
+      url: 'https://instagram.com/yourumkm',
+    },
+    {
+      name: 'Facebook',
+      icon: '/medsos/facebook.png',
+      url: 'https://facebook.com/yourumkm',
+    },
+    {
+      name: 'TikTok',
+      icon: '/medsos/tiktok.png',
+      url: 'https://tiktok.com/@yourumkm',
+    },
+    {
+      name: 'Youtube',
+      icon: '/medsos/youtube.png',
+      url: 'https://youtube.com/@yourumkm',
+    }
   ];
 
   return (

@@ -10,5 +10,5 @@ export const generateWhatsAppMessage = (
     `Jumlah: ${quantity}\n\n` +
     `Terima kasih!`
   );
-  return `https://wa.me/6281234567890?text=${message}`; // Ganti dengan nomor WhatsApp UMKM
+  return `https://wa.me/6282196809592?text=${message}`; // Ganti dengan nomor WhatsApp UMKM
 };
